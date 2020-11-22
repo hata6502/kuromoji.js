@@ -1,3 +1,13 @@
+## Notice
+
+This is the fork of [takuyaa/kuromoji.js](https://github.com/takuyaa/kuromoji.js)
+
+Features
+
+- A cache layer in browser to prevent duplicated fetching.
+- Use Fetch instead of XHR in browser.
+- Use uncompressed dictionary data.
+
 kuromoji.js
 ===========
 
