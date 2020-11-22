@@ -1,4 +1,4 @@
-## Notice
+# Notice
 
 This is the fork of [takuyaa/kuromoji.js](https://github.com/takuyaa/kuromoji.js)
 
