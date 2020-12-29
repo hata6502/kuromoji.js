@@ -1,7 +1,7 @@
 {
-  "name": "kuromoji",
+  "name": "@hata6502/kuromoji",
   "description": "JavaScript implementation of Japanese morphological analyzer",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "author": "Takuya Asano <takuya.a@gmail.com>",
   "browser": {
     "./src/loader/NodeDictionaryLoader.js": "./src/loader/BrowserDictionaryLoader.js"

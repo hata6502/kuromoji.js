@@ -6382,7 +6382,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
     if ("undefined" === typeof module) {
 	    // In browser
-        window.doublearray = doublearray;
+        self.doublearray = doublearray;
     } else {
 	    // In node
         module.exports = doublearray;
@@ -8096,8 +8096,8 @@ module.exports = kuromoji;
 
 var DictionaryLoader = require("./DictionaryLoader");
 
-if (!window.kuromoji) {
-    window.kuromoji = {
+if (!self.kuromoji) {
+    self.kuromoji = {
         cached_dics: []
     };
 }
@@ -8119,7 +8119,7 @@ BrowserDictionaryLoader.prototype = Object.create(DictionaryLoader.prototype);
  * @param {BrowserDictionaryLoader~onLoad} callback Callback function
  */
 BrowserDictionaryLoader.prototype.loadArrayBuffer = function (url, callback) {
-    var cached_dic = window.kuromoji.cached_dics.find(function (cached_dic) {
+    var cached_dic = self.kuromoji.cached_dics.find(function (cached_dic) {
         return cached_dic.url === url;
     });
 
@@ -8139,7 +8139,7 @@ BrowserDictionaryLoader.prototype.loadArrayBuffer = function (url, callback) {
             url
         };
 
-        window.kuromoji.cached_dics.push(cached_dic);
+        self.kuromoji.cached_dics.push(cached_dic);
     }
 
     cached_dic.fetch.then(function (arraybuffer) {

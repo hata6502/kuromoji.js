@@ -31,7 +31,7 @@ gulp.task("clean", (done) => {
 gulp.task("build", [ "clean" ], () => {
     return browserify({
         entries: [ "src/kuromoji.js" ],
-        standalone: "kuromoji" // window.kuromoji
+        standalone: "kuromoji" // self.kuromoji
     })
         .bundle()
         .pipe(source("kuromoji.js"))
